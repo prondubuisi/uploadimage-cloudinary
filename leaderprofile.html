@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <head>  
+    <meta charset = "UTF-8">
+	<title>Add Leader</title>
+	<link rel="stylesheet" href="leaderprofile.css" />
+	<script type= "text/javascript" src = "imageupload.js"></script>
+	
+  </head>
+  <body id = "body">
+     <div id = "general">
+       
+		  <form  id = "form1" runat="server" action="imageupload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+	
+	<img id="image" alt="your image" width="200" height="200" />
+
+<input type="file" 
+    onchange="document.getElementById('image').src = window.URL.createObjectURL(this.files[0])" name="fileToUpload" id="fileToUpload" >
+	
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+	   
+  </body>
