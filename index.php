@@ -1,2 +1,2 @@
 <?php
-echo phpinfo();
+header('Location : http://www.google.com/');
