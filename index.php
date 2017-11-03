@@ -1,2 +1,2 @@
 <?php
-redirect('/uploadimage.html');
+header('location : uploadimage.html');
