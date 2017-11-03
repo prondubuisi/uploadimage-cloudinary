@@ -1,2 +1,2 @@
 <?php
-header('Location : uploadimage.html');
+echo phpinfo();
