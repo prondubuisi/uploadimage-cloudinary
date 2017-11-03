@@ -1,2 +1,2 @@
 <?php
-header('location : uploadimage.html');
+header('Location : uploadimage.html');
