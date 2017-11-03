@@ -1,4 +1,4 @@
-<?php header('Location:https://facebook.com');
+<?php header('Location: uploadimage.html');
     
 
 ?>
