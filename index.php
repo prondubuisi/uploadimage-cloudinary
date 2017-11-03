@@ -1,5 +1,4 @@
-<?php
-header("Location : http://www.google.com/");
-
+<?php header('Location:https://facebook.com');
+    
 
 ?>
