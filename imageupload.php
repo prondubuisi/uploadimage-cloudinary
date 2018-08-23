@@ -49,7 +49,7 @@ if ($uploadOk == 0) {
 
     $image_properties = \Cloudinary\Uploader::upload($_FILES["fileToUpload"]["tmp_name"]);
             $image_url =$image_properties['secure_url'];
-            echo('           '.$image_url);
+           echo('           '."<a href=\"$image_url\" target=\"_blank\"> View uploaded image </a>");
             return true;
 }
 ?>
