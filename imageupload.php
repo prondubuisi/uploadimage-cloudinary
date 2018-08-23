@@ -2,9 +2,9 @@
 <?php
 
 
-require 'Cloudinary.php';
-require 'Uploader.php';
-require 'Api.php';
+require 'cloudinary/Cloudinary.php';
+require 'cloudinary/Uploader.php';
+require 'cloudinary/Api.php';
 
 
 \Cloudinary::config(array( 
@@ -30,8 +30,8 @@ if(isset($_POST["submit"])) {
 }
 // Check if file already exists
 
-// Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
+// Check file size exceeds from 5mb
+if ($_FILES["fileToUpload"]["size"] > 5000000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
