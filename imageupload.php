@@ -8,9 +8,9 @@ require 'cloudinary/Api.php';
 
 
 \Cloudinary::config(array( 
-  "cloud_name" => "dnuraq8oa", 
-  "api_key" => "274545435744652", 
-  "api_secret" => "jflXJqU3PYSSqtRUAoVz3F1D4dU" 
+  "cloud_name" => "your_cloud_name", 
+  "api_key" => "your_api_key", 
+  "api_secret" => "your_api_secret" 
 ));
 
 $imageType = ["jpg", "png", "jpeg", "gif" ];
