@@ -13,6 +13,8 @@ require 'cloudinary/Api.php';
   "api_secret" => "jflXJqU3PYSSqtRUAoVz3F1D4dU" 
 ));
 
+$imageType = ["jpg", "png", "jpeg", "gif" ];
+
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -36,10 +38,11 @@ if ($_FILES["fileToUpload"]["size"] > 5000000) {
     $uploadOk = 0;
 }
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" ) {
-    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-    $uploadOk = 0;
+//check file extension
+foreach ($imageType as $type) {
+
+    if(strcasecmp($type, $imageFileType ) == 0);
+       $uploadok = 1;
 }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
