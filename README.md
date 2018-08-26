@@ -1,5 +1,5 @@
 # uploadimage-cloudinary
-A wrapper that Helps you upload images to cloudinary
+A Cloudinary PHP wrapper example, that Helps you upload images to cloudinary 
 
 ## Setting up the wrapper for use(Installation)
 - Download the code via Git
